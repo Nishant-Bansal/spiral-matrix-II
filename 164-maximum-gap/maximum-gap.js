@@ -7,17 +7,8 @@ var maximumGap = function(nums) {
         return 0;
     } else {
         //sort the array
-        // let val;
-        // for(let i=0; i< nums.length; i++){
-        //     for(let j = i; j<nums.length; j++){
-        //         if(nums[i] > nums[j] && i != j){
-        //             val = nums[i];
-        //             nums[i] = nums[j];
-        //             nums[j] = val
-        //         }
-        //     }
-        // }
         nums=nums.sort((a,b)=>a-b)
+        
         //find the maximum diffrence
         let maxDiff = 0;
         for(let i=0; i<=nums.length-2; i++){
